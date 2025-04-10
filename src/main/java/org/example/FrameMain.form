@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.FrameMain">
+  <grid id="27dc6" binding="MainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1566" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="1a675" binding="DrawPanel" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="5ca63" binding="ButtonPanel" layout-manager="GridLayoutManager" row-count="5" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="aeff3" class="javax.swing.JRadioButton" binding="Deformation">
+            <constraints>
+              <grid row="0" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Деформация"/>
+            </properties>
+          </component>
+          <component id="2adbb" class="javax.swing.JRadioButton" binding="Rotate">
+            <constraints>
+              <grid row="0" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <selected value="false"/>
+              <text value="Вращение"/>
+            </properties>
+          </component>
+          <component id="85ae" class="javax.swing.JRadioButton" binding="Translation">
+            <constraints>
+              <grid row="0" column="5" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Перемещение"/>
+            </properties>
+          </component>
+          <component id="10bb9" class="javax.swing.JTextField" binding="deformationCountX">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="1"/>
+              <toolTipText value=""/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="9d78a" class="javax.swing.JTextField" binding="rotateCount">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="b47a3" class="javax.swing.JTextField" binding="translationCountX">
+            <constraints>
+              <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="57aba" class="javax.swing.JTextField" binding="text1">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <text value="Коэффицент"/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="47402" class="javax.swing.JTextField" binding="text2">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="Введите угол вра"/>
+            </properties>
+          </component>
+          <component id="47f1a" class="javax.swing.JTextField" binding="text3">
+            <constraints>
+              <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="Сдвиг"/>
+            </properties>
+          </component>
+          <component id="85cf" class="javax.swing.JTextField" binding="text4">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <text value="Коэффицент"/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="10098" class="javax.swing.JTextField" binding="deformationCountY">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="1"/>
+              <toolTipText value=""/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="5d80" class="javax.swing.JRadioButton" binding="Reflection">
+            <constraints>
+              <grid row="0" column="3" row-span="2" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Отражение"/>
+            </properties>
+          </component>
+          <component id="63ea1" class="javax.swing.JTextField" binding="reflectionCountX">
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="-1"/>
+              <toolTipText value=""/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="82ee8" class="javax.swing.JTextField" binding="reflectionCountY">
+            <constraints>
+              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="-1"/>
+              <toolTipText value=""/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="8be8e" class="javax.swing.JTextField" binding="text5">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="Отражение "/>
+            </properties>
+          </component>
+          <component id="ec1ab" class="javax.swing.JTextField" binding="text6">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="Отражение "/>
+            </properties>
+          </component>
+          <component id="7492e" class="javax.swing.JTextField" binding="translationCountY">
+            <constraints>
+              <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="f71b0" class="javax.swing.JTextField" binding="text7">
+            <constraints>
+              <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="Сдвиг "/>
+            </properties>
+          </component>
+          <component id="c486d" class="javax.swing.JTextField" binding="text8">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <text value="деформации по х"/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="ceeb6" class="javax.swing.JTextField" binding="text9">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <text value="деформации по у"/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <component id="23e84" class="javax.swing.JTextField" binding="text10">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="щения (в градусах)"/>
+            </properties>
+          </component>
+          <component id="7edec" class="javax.swing.JTextField" binding="text11">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="относительно OX"/>
+            </properties>
+          </component>
+          <component id="cf32e" class="javax.swing.JTextField" binding="text12">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="относительно OY"/>
+            </properties>
+          </component>
+          <component id="9aba7" class="javax.swing.JTextField" binding="text13">
+            <constraints>
+              <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value=" по оси ОХ"/>
+            </properties>
+          </component>
+          <component id="a8d8f" class="javax.swing.JTextField" binding="text14">
+            <constraints>
+              <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font size="16"/>
+              <horizontalAlignment value="0"/>
+              <text value="по оси ОY"/>
+            </properties>
+          </component>
+          <component id="ba04b" class="javax.swing.JButton" binding="reset">
+            <constraints>
+              <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Восстановить"/>
+            </properties>
+          </component>
+          <component id="5917d" class="javax.swing.JButton" binding="startButton">
+            <constraints>
+              <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Выполнить"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="aeff3"/>
+      <member id="2adbb"/>
+      <member id="85ae"/>
+      <member id="de2e"/>
+      <member id="5d80"/>
+    </group>
+    <group name="buttonGroup2">
+      <member id="9f821"/>
+      <member id="7b971"/>
+    </group>
+  </buttonGroups>
+</form>
